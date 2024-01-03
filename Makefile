@@ -60,6 +60,7 @@ dkms:
 	dkms add -m ${KMODNAME} -v ${KMODVER}
 	dkms build -m ${KMODNAME} -v ${KMODVER}
 	dkms install -m ${KMODNAME} -v ${KMODVER}
+	rm -r /usr/src/${KMODNAME}-${KMODVER}/
 
 dkms-uninstall:
 	dkms remove -m ${KMODNAME} -v ${KMODVER}
