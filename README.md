@@ -12,6 +12,7 @@ Authorship and copyright are held by Paragon Software GmbH
 #### DKMS (recommended)
 ##### Dependency: `dkms`
 ~~~
+Don't Forget to remove previous version totally first
 sudo make dkms # it will register the DKMS module and install for the current running kernel
 
 # To uninstall:
