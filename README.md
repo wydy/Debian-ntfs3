@@ -12,7 +12,6 @@ Authorship and copyright are held by Paragon Software GmbH
 #### DKMS (recommended)
 ##### Dependency: `dkms`
 ~~~
-make -j$(cat nproc) KVERSION=<your.kernel.version> # if left blank, it will build for the current running kernel
 sudo make dkms # it will register the DKMS module and install for the current running kernel
 
 # To uninstall:
