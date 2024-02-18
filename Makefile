@@ -6,7 +6,7 @@
 # to check robot warnings
 
 KMODNAME=ntfs3
-KMODVER=6.1.69
+KMODVER=6.1.76
 
 ccflags-y += -Wint-to-pointer-cast \
 	$(call cc-option,-Wunused-but-set-variable,-Wunused-const-variable) \
