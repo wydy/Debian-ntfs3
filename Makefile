@@ -6,7 +6,7 @@
 # to check robot warnings
 
 KMODNAME=ntfs3
-KMODVER=6.1.76
+KMODVER=6.1.85
 
 ccflags-y += -Wint-to-pointer-cast \
 	$(call cc-option,-Wunused-but-set-variable,-Wunused-const-variable) \
@@ -62,4 +62,5 @@ dkms:
 	dkms install -m ${KMODNAME} -v ${KMODVER}
 
 dkms-uninstall:
+	dkms uninstall -k -m ${KMODNAME} -v ${KMODVER}
 	dkms remove -m ${KMODNAME} -v ${KMODVER}
